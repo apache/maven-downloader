@@ -34,14 +34,19 @@ under the License.
   <description>Provide a super simple interface for downloading a single artifact.</description>
 
   <scm>
-    <connection>scm:svn:http://svn.apache.org/repos/asf/maven/shared/trunk/maven-downloader</connection>
-    <developerConnection>scm:svn:https://svn.apache.org/repos/asf/maven/shared/trunk/maven-downloader</developerConnection>
-    <url>http://svn.apache.org/viewvc/maven/shared/trunk/maven-downloader</url>
+    <connection>scm:git:https://gitbox.apache.org/repos/asf/maven-downloader.git</connection>
+    <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/maven-downloader.git</developerConnection>
+    <url>https://github.com/apache/maven-downloader/tree/${project.scm.tag}</url>
+    <tag>HEAD</tag>
   </scm>
   <issueManagement>
     <system>jira</system>
     <url>https://issues.apache.org/jira/browse/MSHARED/component/12326432</url>
   </issueManagement>
+  <ciManagement>
+    <system>Jenkins</system>
+    <url>https://builds.apache.org/job/maven-box/job/maven-downloader/</url>
+  </ciManagement>
   <distributionManagement>
     <site>
       <id>apache.website</id>
